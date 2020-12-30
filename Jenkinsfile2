@@ -1,7 +1,7 @@
 pipeline {
-//    agent { label 'master && node_1 && node_2 && node_3_win7' }
+//    agent { label 'node_1 && node_2' }
 //    agent any
-    agent { label 'master && node_1 && node_2' }
+    agent { label 'node_2' }
     environment {
       PROJECT_NAME = "my_project"
       OWNER_NAME   = "test"
