@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'master && node_1 && node_2' }
     environment {
       PROJECT_NAME = "my_project"
       OWNER_NAME   = "test"
